@@ -6,10 +6,86 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+section {
+  background-color: #000;
+  height: 100vh;
+}
+
+.head {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  top: 40%;
+  transform: translateY(-40%);
+  width: 100%;
+}
+
+.head span {
+  display: inline-block;
+  animation: ali 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes ali {
+  0% {
+    transform: rotateY(90deg);
+    filter: blur(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.head span:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.head span:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.head span:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.head span:nth-child(4) {
+  animation-delay: 2.5s;
+}
+
+.head span:nth-child(5) {
+  animation-delay: 3s;
+}
+
+.head span:nth-child(6) {
+  animation-delay: 3.5s;
+}
+
+.head span:nth-child(7) {
+  animation-delay: 4s;
+}
+.head span:nth-child(8) {
+  animation-delay: 4.5s;
+}
+.head span:nth-child(9) {
+  animation-delay: 4.75s;
+}
+.head span:nth-child(10) {
+  animation-delay: 5s;
+}
+.head span:nth-child(11) {
+  animation-delay: 5.25s;
+}
+.head span:nth-child(12) {
+  animation-delay: 5.5s;
+}
+
+
+video {
+  height: 100vh;
 }
 
